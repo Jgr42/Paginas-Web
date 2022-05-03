@@ -1,0 +1,159 @@
+<html>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" type="text/css">
+  <style>
+    body{
+      background-color: rgba(136, 136, 206, 0.7);
+      font-family: Poppins;
+      color: #FFF
+    }
+    h2{
+      margin-left: 35px;
+      font-size: 19px;
+      text-shadow: black 0 -1px;
+    }
+    .centrar{
+      text-align: center;
+    }
+     .centrar-cuadro{
+      position: relative;
+      margin: auto;
+      display: block;
+      width: 575px
+    }
+    #title{
+      padding-top: 15px;
+    }
+    #description{
+      padding-bottom: 15px;
+    }
+    #survey-form{
+      background: rgba(27, 27, 50, 0.8);
+      border-width: 1px;
+      border-style: solid;
+      border-color: violet;
+      border-radius: 2%;
+      width: 600px;
+      padding-bottom:15px;
+    }
+    .alinear-texto-cuadro{
+      display: inline-block;
+      width: 525px;
+      text-align: left;
+      padding-top: 20px;
+    }
+    input{
+      width: 500px;
+      height: 1rem;
+      padding: 0.200rem 0.75rem;
+      color: #000;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;   
+      font-family: poppins;
+      
+    }
+    .botones{
+      width: 80px;
+      margin-left: 10px;
+    }
+    select{
+      width: 520px;
+      height: 2rem;
+      color: #000;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;   
+      font-family: poppins;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+    textarea{
+      margin-left: 40px;
+      width: 494px;
+      padding: 0.200rem 0.75rem;
+      color: #000;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: 0.25rem;   
+      font-family: poppins;
+      height: 70px;
+    }
+    button{
+      display: block;
+      background: #37af65;
+      font-family: poppins;
+      color: #FFF;
+      margin-left: 38px;
+      border-radius: 5px;
+      width: 525px;
+      height: 2.5rem;
+    }
+    
+  </style>
+  
+  <head>
+    <title>Inscripciones Boca Juniors</title>
+    </head>
+  
+  <body>
+    <h1 id="title" class="centrar">Inscripciones Boca Juniors</h1>
+    <p id="description" class="centrar">Completa los campos a continuación</p>
+   <div class="centrar-cuadro"> <form action="#" id="survey-form">
+      
+      <div class="centrar"><label id="name-label" for="name" class="alinear-texto-cuadro"><strong>Nombre</strong></label></br>
+        <input name="name" id="name" required placeholder="Ingresa tu nombre">
+    
+      </br><label id="email-label" for="email" class="alinear-texto-cuadro"><strong>Email</strong></label></br>
+        <input type="email" name="email" id="email" required placeholder="Ingresa tu email">
+
+</br><label id="number-label" for="edad" class="alinear-texto-cuadro"><strong>Edad </strong>(opcional)</label></br>
+        <input type="number" name="edad" id="number" min="5" max="25" placeholder="Ingresa tu edad"></div>
+
+<div><h2>¿Como nos conociste?</h2></div>
+
+<div><label for="television"> 
+  <input id="television" type="radio" name="conocimiento" value="television" class="botones">Televisión</label><br>
+
+<label for="radio"> 
+  <input id="radio" type="radio" name="conocimiento" value="radio" class="botones">Radio</label><br>
+  
+<label for="conocidos"> 
+  <input id="conocidos" type="radio" name="conocimiento" value="conocidos" class="botones">Conocidos/Familiar</label><br>
+
+<label for="Ninguna"><input id="Ninguna" type="radio" name="conocimiento" class="botones" value="0">Ninguna de las anteriores</label></div>
+
+
+<div class="centrar"></br><select name="posicion" id="dropdown">
+  <option selected value="0">Elije una opción</option>
+  <option value="Arquero">Arquero</option>
+  <option value="Delantero">Delantero</option>
+  <option value="Defensor">Defensor</option>
+  <option value="Mediocampista">Mediocampista</option>
+</select></div>
+
+<div><h2>¿Quién es tu idolo?</h2></div>
+
+<div><label for="schiavi"> 
+  <input id="schiavi" type="checkbox" name="idolo" value="Schiavi" class="botones">Schiavi</label><br>
+  
+  <label for="battaglia"> 
+  <input id="battaglia" type="checkbox" name="idolo" value="Battaglia" class="botones">Battaglia</label><br>
+  
+  <label for="riquelme"> 
+  <input id="riquelme" type="checkbox" name="idolo" value="Riquelme" class="botones">Riquelme</label><br>
+  
+  <label for="palermo"> 
+  <input id="palermo" type="checkbox" name="idolo" value="Palermo" class="botones">Palermo</label>
+</div>
+
+<div><h2>¿Algun comentario o sugerencia?</h2></div>
+
+<textarea placeholder="Deja tu comentario aquí..."></textarea>
+
+<br><br><div><button id="submit" type="submit">Enviar formulario</button></div>
+    </form></div>
+  </body>
+</html>

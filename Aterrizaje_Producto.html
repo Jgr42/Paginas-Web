@@ -1,0 +1,183 @@
+<html>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: #000;
+      color: #FFF;
+      font-family: montserrat;
+    }
+    header{
+    width:100%;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+    }
+    header nav{
+    text-align: right;
+    display:inline-block;
+    width:60%;
+    }
+    header ul{
+    display: inline-block;
+    list-style-type: none;
+    }
+    header ul li{
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 70px;
+    }
+    header ul li a{
+    text-decoration: none;
+    border: solid;
+    border-color: rgb(195,14,47);
+    border-radius: 5px;
+    background-color: rgb(195,14,47);
+    color: white;
+    padding: 0.5em;
+    }
+    header ul li a:hover{
+    background-color: #B8B799;
+    border-color: #B8B799;
+    }
+    header ul li a:active{
+    padding: 0.2em;
+    }
+    #header-img{
+      width: 15%;
+      display:inline-block;
+      float: left;
+    }
+    .descripcion{
+      text-align: left;
+      padding-top: 120px;
+    }
+    div ul li{
+      list-style-type: none;
+      font-size: 18px;
+    }
+    div ul p{
+      font-size: 15px;
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+    iframe{
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+    form{
+      margin-top: 30px;
+      margin-left: 40px;
+    }
+    @media (max-width: 800px)
+    #pricing {
+    flex-direction: column;
+    }
+    #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    @media (max-width: 800px)
+    .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+    .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 5);
+    margin: 10px;
+    border: 1px solid #F00;
+    border-radius: 3px;
+    }
+    .level{
+    background-color: rgb(195,14,47);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+    h2{
+      font-size: 18px;
+    }
+    button{
+      background-color: rgb(195,14,47);
+      color: white;
+    }
+</style>
+  <head><title>Monitores Zowie</title></head>
+  
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://www.benq.eu/content/dam/b2c/es/news/g4/1465544409.jpg" alt="logo zowie">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#novedades">Novedades</a></li>
+          <li><a class="nav-link" href="#video">Funcionamiento</a></li>
+          <li><a class="nav-link" href="#pricing">Precios</a></li>
+        </ul>
+      </nav>
+      </header>
+    </br></br>
+    <div id="novedades" class="descripcion"><ul>
+      <li>-Materiales de Primera</li>
+      <p>Usamos los mejores materiales para confeccionar los monitores, lo que incrementa su vida util por mas tiempo.</p>
+      <li>-Rapida Entrega</li>
+      <p>Nos aseguramos de que puedas recibir el monitor al poco tiempo despues de efectuar tu compra.</p>
+      <li>-Seguro de Calidad </li>
+      <p>En todos los productos siempre nos aseguramos de que no haya daños o fallas ademas de testearlos antes de enviarlo.</p>
+    </ul></div>
+
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hELJmmkCz78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <p>Recibe mas informacion</p>
+  <input id="email" type="email" placeholder="Introduce tu email" required>
+  <input id="submit" type="submit" value="Enviar">
+</form>
+
+<section id="pricing">
+<div class="product">
+<div class="level">XL2411P</div>
+<h2>$600</h2>
+<ul><li>Black Equalizer</li>
+  <li>Color Vibrance</li>
+  <li>Display Port</li>
+</ul>
+<button>Select</button>
+</div>
+  
+<div class="product">
+<div class="level">XL2540</div>
+<h2>$600</h2>
+<ul><li>240hz</li>
+  <li>Shield</li>
+  <li>1920x1080</li>
+</ul>
+<button>Select</button>
+</div>
+  
+<div class="product">
+<div class="level">XL2546</div>
+<h2>$600</h2>
+<ul style="list-style: none;"><li>240hz</li>
+  <li>Dynamic Accuracy</li>
+  <li>Shield</li>
+</ul>
+<button>Select</button>
+</div> 
+</section>
+
+  </body>
+</html>
